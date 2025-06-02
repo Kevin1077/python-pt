@@ -21,7 +21,7 @@ while decision == "yes":
     name = input("Enter your name\n")
     bid  = int(input("Enter your bid\n"))
     auction_dic[name] = bid
-    decision = input("Do you want to continue (yes/no)")
+    decision = input("Do you want to continue (yes/no)").lower()
     if decision == "no":
         high_bid(auction_dic)
         break
